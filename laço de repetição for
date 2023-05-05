@@ -1,0 +1,21 @@
+# inicializa as variáveis de contagem
+count_pares = 0
+count_impares = 0
+count_zeros = 0
+
+# lê 10 números inteiros do usuário
+for i in range(10):
+    num = int(input("Digite um número inteiro: "))
+    
+    # verifica se o número é par, ímpar ou zero
+    if num == 0:
+        count_zeros += 1
+    elif num % 2 == 0:
+        count_pares += 1
+    else:
+        count_impares += 1
+
+# apresenta os resultados
+print("Quantidade de números pares digitados:", count_pares)
+print("Quantidade de números ímpares digitados:", count_impares)
+print("Quantidade de zeros digitados:", count_zeros)
